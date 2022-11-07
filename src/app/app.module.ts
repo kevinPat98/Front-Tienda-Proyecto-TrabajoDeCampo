@@ -28,7 +28,7 @@ import { DpedidosComponent } from './components/perfil/dpedidos/dpedidos.compone
 import { RatingModule } from 'ng-starrating';
 import { VerifyPagoComponent } from './components/verify-pago/verify-pago.component';
 import { ReviewsComponent } from './components/perfil/reviews/reviews.component';
-import { EmbajadorasComponent } from './components/static/mongui/mongui.component';
+import { EmbajadorasComponent } from './components/static/embajadoras/embajadoras.component';
 import { ImpactoComponent } from './components/static/impacto/impacto.component';
 import { NosotrosComponent } from './components/static/nosotros/nosotros.component';
 import { PoliticasEnvioComponent } from './components/static/politicas-envio/politicas-envio.component';

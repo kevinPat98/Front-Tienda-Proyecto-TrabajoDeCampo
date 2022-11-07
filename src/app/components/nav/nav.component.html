@@ -10,12 +10,12 @@ color:#191919" *ngIf="config.envio_activacion != 'Desactivado'">
         <span *ngIf="currency != 'PEN'">${{config.monto_min_dolares}}</span>
     </div>
 </div>
-<header class="header header--standard" data-sticky="true" style="    background: #4776be !important;">
+<header class="header header--standard" data-sticky="true" style="    background: #127c5f !important;">
    
     <div class="header__left">
         <a class="ps-logo" [routerLink]="['/']" routerLinkActive="router-link-active">
         
-            <img src="assets/images/home/LOGO.png" alt="" style="width:100px;">
+            <img src="https://i.postimg.cc/1zY1kcfX/logo-white.png" alt="" style="width:150px;">
         </a>
     </div>
     <div class="header__right">
@@ -40,7 +40,7 @@ color:#191919" *ngIf="config.envio_activacion != 'Desactivado'">
                       <li>
                           <a [routerLink]="['/nosotros']">{{ 'menu.item_siete' | translate }}</a>
                           <a [routerLink]="['/impacto-social']">{{ 'menu.item_ocho' | translate }}</a>
-                          <a [routerLink]="['/mongui']" >{{ 'menu.item_nueve' | translate }}</a>
+                          <a [routerLink]="['/embajadoras']" >{{ 'menu.item_nueve' | translate }}</a>
                       </li>
                   </ul>
               </li>
@@ -176,7 +176,7 @@ color:#191919" *ngIf="config.envio_activacion != 'Desactivado'">
                         <br> 
                         <ng-container>
                             <div>
-                                <h5 class="text-center"><b style="color: #4776be;">Antes de realizar tu compra</b></h5>
+                                <h5 class="text-center"><b style="color: #127c5f;">Antes de realizar tu compra</b></h5>
                             </div>
                             <br>
                             <p>
@@ -296,7 +296,7 @@ color:#191919" *ngIf="config.envio_activacion != 'Desactivado'">
                           </div>
                       </li>
                       <li><a [routerLink]="['/nosotros']" >{{ 'menu.item_seis' | translate }}</a></li>
-                      <li><a [routerLink]="['/mongui']">{{ 'menu.item_nueve' | translate }}</a></li>
+                      <li><a [routerLink]="['/embajadoras']">{{ 'menu.item_nueve' | translate }}</a></li>
                       <li><a [routerLink]="['/contacto']">{{ 'menu.item_cuatro' | translate }}</a></li>
                   
                       <li *ngIf="user_lc"><a (click)="logout()" >{{ 'menu.item_diez' | translate }}</a></li>
