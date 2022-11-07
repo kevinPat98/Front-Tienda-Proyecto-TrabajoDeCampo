@@ -12,7 +12,7 @@ export class DireccionesComponent implements OnInit {
 
   public geo : any = {};
   public country = '';
-  public currency = 'PEN';
+  public currency = 'COP';
 
   public token = localStorage.getItem('token');
   public direccion : any = {
@@ -171,7 +171,7 @@ export class DireccionesComponent implements OnInit {
     this.direccion.zona = str_select_pais[1];
     this.direccion.pais = pais;
 
-    if(pais == 'Perú'){
+    if(pais == 'Colombia'){
       setTimeout(() => {
         $('#sl-region').prop('disabled', false);
       }, 50);

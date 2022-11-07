@@ -14,7 +14,7 @@ export class FooterComponent implements OnInit {
 
   public geo : any = {};
   public country = '';
-  public currency = 'PEN';
+  public currency = 'COP';
   public categorias :Array<any> = [];
   public activeLang = 'es';
 

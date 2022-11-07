@@ -96,13 +96,13 @@
                 <div class="ps-product__content"><a class="ps-product__title" [routerLink]="['/productos/'+item.producto.slug]" >{{item.producto.titulo}}</a>
                   
                   <p class="ps-product__price">
-                    <ng-container *ngIf="currency != 'PEN'">
+                    <ng-container *ngIf="currency != 'COP'">
                       <span class="text-danger mr-3" *ngIf="item.producto.precio_antes_dolares >= 1">
                         <del>${{item.producto.precio_antes_dolares}}</del>
                       </span>
                       <span><b>${{item.producto.precio_dolar}}</b></span>
                     </ng-container>
-                    <ng-container *ngIf="currency == 'PEN'">
+                    <ng-container *ngIf="currency == 'COP'">
                       <span class="text-danger mr-3" *ngIf="item.producto.precio_antes_soles >= 1">
                         <del>S/{{item.producto.precio_antes_soles}}</del>
                       </span>
@@ -166,13 +166,13 @@
                                   <span><i class="text-warning fa fa-star"></i></span>
                                   <span><i class="text-warning fa fa-star"></i></span>
                         <p class="ps-product__price">
-                          <ng-container *ngIf="currency != 'PEN'">         
+                          <ng-container *ngIf="currency != 'COP'">         
                             <span class=" mr-3"><b>${{item.precio_dolar}}</b></span>
                             <span class="text-danger" *ngIf="item.precio_antes_dolares >= 1">
                               <del>${{item.precio_antes_dolares}}</del>
                             </span>
                           </ng-container>
-                          <ng-container *ngIf="currency == 'PEN'">
+                          <ng-container *ngIf="currency == 'COP'">
                             
                             <span class=" mr-3"><b>S/{{item.precio}}</b></span>
                             <span class="text-danger" *ngIf="item.precio_antes_soles >= 1">
@@ -184,8 +184,8 @@
                     </div>
                   </div>
                 </ng-container>
-                <ng-container *ngIf="currency == 'PEN'">
-                  <ng-container *ngIf="item.visibilidad == 'Peru'">
+                <ng-container *ngIf="currency == 'COP'">
+                  <ng-container *ngIf="item.visibilidad == 'Colombia'">
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 " >
                       <div class="ps-product">
                         <div class="ps-product__thumbnail">
@@ -202,13 +202,13 @@
                                     <span><i class="text-warning fa fa-star"></i></span>
                                     <span><i class="text-warning fa fa-star"></i></span>
                           <p class="ps-product__price">
-                            <ng-container *ngIf="currency != 'PEN'">         
+                            <ng-container *ngIf="currency != 'COP'">         
                               <span class=" mr-3"><b>${{item.precio_dolar}}</b></span>
                               <span class="text-danger" *ngIf="item.precio_antes_dolares >= 1">
                                 <del>${{item.precio_antes_dolares}}</del>
                               </span>
                             </ng-container>
-                            <ng-container *ngIf="currency == 'PEN'">
+                            <ng-container *ngIf="currency == 'COP'">
                               
                               <span class=" mr-3"><b>S/{{item.precio}}</b></span>
                               <span class="text-danger" *ngIf="item.precio_antes_soles >= 1">
@@ -221,7 +221,7 @@
                     </div>
                   </ng-container>
                 </ng-container>
-                <ng-container *ngIf="currency != 'PEN'">
+                <ng-container *ngIf="currency != 'COP'">
                   <ng-container *ngIf="item.visibilidad == 'Exterior'">
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 " >
                       <div class="ps-product">
@@ -239,13 +239,13 @@
                                     <span><i class="text-warning fa fa-star"></i></span>
                                     <span><i class="text-warning fa fa-star"></i></span>
                           <p class="ps-product__price">
-                            <ng-container *ngIf="currency != 'PEN'">         
+                            <ng-container *ngIf="currency != 'COP'">         
                               <span class=" mr-3"><b>${{item.precio_dolar}}</b></span>
                               <span class="text-danger" *ngIf="item.precio_antes_dolares >= 1">
                                 <del>${{item.precio_antes_dolares}}</del>
                               </span>
                             </ng-container>
-                            <ng-container *ngIf="currency == 'PEN'">
+                            <ng-container *ngIf="currency == 'COP'">
                               
                               <span class=" mr-3"><b>S/{{item.precio}}</b></span>
                               <span class="text-danger" *ngIf="item.precio_antes_soles >= 1">
