@@ -177,7 +177,7 @@ export class CarritoComponent implements OnInit {
     this.direccion.zona = str_select_pais[1];
     this.direccion.pais = pais;
 
-    if(pais == 'Colombia'){
+    if(pais == 'Perú'){
       setTimeout(() => {
         $('#sl-region').prop('disabled', false);
       }, 50);

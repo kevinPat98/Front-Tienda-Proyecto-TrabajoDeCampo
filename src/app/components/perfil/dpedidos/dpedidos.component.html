@@ -147,10 +147,10 @@
                                       </dl>
                                      
                                       <dl>
-                                        <ng-container *ngIf="orden.direccion.pais != 'Colombia'">
+                                        <ng-container *ngIf="orden.direccion.pais != 'Perú'">
                                           {{orden.direccion.pais}}, {{orden.direccion.distrito}}
                                         </ng-container>
-                                        <ng-container *ngIf="orden.direccion.pais == 'Colombia'">
+                                        <ng-container *ngIf="orden.direccion.pais == 'Perú'">
                                           <dd>{{orden.direccion.pais}}, 
                                             <span *ngIf="orden.direccion.region">{{orden.direccion.region}}</span>,
                                             <span *ngIf="orden.direccion.provincia">{{orden.direccion.provincia}}</span>,

@@ -47,10 +47,10 @@
                             <td>{{item.variedad.valor}}</td>
                             <td>
                                 <strong>
-                                    <ng-container *ngIf="currency != 'COP'">
+                                    <ng-container *ngIf="currency != 'PEN'">
                                         ${{item.producto.precio_dolar}}
                                     </ng-container>
-                                    <ng-container *ngIf="currency == 'COP'">
+                                    <ng-container *ngIf="currency == 'PEN'">
                                         S/{{item.producto.precio}}
                                     </ng-container>
                                 </strong>
@@ -66,10 +66,10 @@
                             <td>
                               <p>
                                 <strong>
-                                    <ng-container *ngIf="currency != 'COP'">
+                                    <ng-container *ngIf="currency != 'PEN'">
                                         ${{item.producto.precio_dolar*item.cantidad}}
                                     </ng-container>
-                                    <ng-container *ngIf="currency == 'COP'">
+                                    <ng-container *ngIf="currency == 'PEN'">
                                         S/{{item.producto.precio*item.cantidad}}
                                     </ng-container>
                                 </strong>
@@ -104,14 +104,14 @@
               <div class="ps-block--checkout-total">
                 <div class="ps-block__top">
                   <h4 style="margin-bottom: 20px !important;">Subtotal 
-                          <span *ngIf="currency != 'COP'">${{subtotal}}</span>
-                          <span *ngIf="currency == 'COP'">S/{{subtotal}}</span>
+                          <span *ngIf="currency != 'PEN'">${{subtotal}}</span>
+                          <span *ngIf="currency == 'PEN'">S/{{subtotal}}</span>
                   </h4>
   
                   <div class="ps-block__shipping">
                     <h4>Envio
-                          <span *ngIf="currency != 'COP'">${{precio_envio_dolares}}</span>
-                          <span *ngIf="currency == 'COP'">S/{{precio_envio_soles}}</span>
+                          <span *ngIf="currency != 'PEN'">${{precio_envio_dolares}}</span>
+                          <span *ngIf="currency == 'PEN'">S/{{precio_envio_soles}}</span>
                     </h4>
                     <p>
                       <a class="ps-product__title" [routerLink]="['/politicas-envio']" >
@@ -127,18 +127,18 @@
                           <select class="form-control" name="str_pais" required [(ngModel)]="str_pais" (change)="select_pais()">
                               <option value="" selected disabled>Seleccionar</option>
                               <ng-container *ngFor="let item of zonas">
-                                  <ng-container  *ngIf="currency =='COP'">
-                                      <option value="{{item.country}}_{{item.zona}}" *ngIf="item.country =='Colombia'">{{item.country}}</option>
+                                  <ng-container  *ngIf="currency =='PEN'">
+                                      <option value="{{item.country}}_{{item.zona}}" *ngIf="item.country =='Perú'">{{item.country}}</option>
                                   </ng-container>
-                                  <ng-container  *ngIf="currency !='COP'">
-                                      <option value="{{item.country}}_{{item.zona}}" *ngIf="item.country !='Colombia'">{{item.country}}</option>
+                                  <ng-container  *ngIf="currency !='PEN'">
+                                      <option value="{{item.country}}_{{item.zona}}" *ngIf="item.country !='Perú'">{{item.country}}</option>
                                   </ng-container>
                               
                               </ng-container>
                           </select>
                       </div>
            
-                      <div class="form-group" *ngIf="direccion.pais == 'Colombia'">
+                      <div class="form-group" *ngIf="direccion.pais == 'Perú'">
                           
                           <select id="sl-region"  name="region" [(ngModel)]="direccion.region" class="form-control" disabled (change)="select_region()">
                               <option value="" selected disabled>Seleccionar</option>
@@ -149,8 +149,8 @@
                   </div>
                   <div class="ps-block__total">
                     <h3>Total
-                      <span *ngIf="currency != 'COP'">${{total_pagar}}</span>
-                      <span *ngIf="currency == 'COP'">S/{{total_pagar}}</span>
+                      <span *ngIf="currency != 'PEN'">${{total_pagar}}</span>
+                      <span *ngIf="currency == 'PEN'">S/{{total_pagar}}</span>
                     </h3>
                   </div>
                 </div>
@@ -224,10 +224,10 @@
                           <td>{{item.variedad.variedad}}</td>
                           <td>
                               <strong>
-                                  <ng-container *ngIf="currency != 'COP'">
+                                  <ng-container *ngIf="currency != 'PEN'">
                                       ${{item.producto.precio_dolar}}
                                   </ng-container>
-                                  <ng-container *ngIf="currency == 'COP'">
+                                  <ng-container *ngIf="currency == 'PEN'">
                                       S/{{item.producto.precio}}
                                   </ng-container>
                               </strong>
@@ -243,10 +243,10 @@
                           <td>
                             <p>
                               <strong>
-                                  <ng-container *ngIf="currency != 'COP'">
+                                  <ng-container *ngIf="currency != 'PEN'">
                                       ${{item.producto.precio_dolar*item.cantidad}}
                                   </ng-container>
-                                  <ng-container *ngIf="currency == 'COP'">
+                                  <ng-container *ngIf="currency == 'PEN'">
                                       S/{{item.producto.precio*item.cantidad}}
                                   </ng-container>
                               </strong>
@@ -281,14 +281,14 @@
               <div class="ps-block--checkout-total">
                 <div class="ps-block__top">
                   <h4 style="margin-bottom: 20px !important;">Subtotal 
-                          <span *ngIf="currency != 'COP'">${{subtotal}}</span>
-                          <span *ngIf="currency == 'COP'">S/{{subtotal}}</span>
+                          <span *ngIf="currency != 'PEN'">${{subtotal}}</span>
+                          <span *ngIf="currency == 'PEN'">S/{{subtotal}}</span>
                   </h4>
   
                   <div class="ps-block__shipping">
                     <h4>Envio
-                          <span *ngIf="currency != 'COP'">${{precio_envio_dolares}}</span>
-                          <span *ngIf="currency == 'COP'">S/{{precio_envio_soles}}</span>
+                          <span *ngIf="currency != 'PEN'">${{precio_envio_dolares}}</span>
+                          <span *ngIf="currency == 'PEN'">S/{{precio_envio_soles}}</span>
                     </h4>
                     <p>
                       <a class="ps-product__title" [routerLink]="['/politicas-envio']" >
@@ -304,18 +304,18 @@
                           <select class="form-control" name="str_pais" required [(ngModel)]="str_pais" (change)="select_pais()">
                               <option value="" selected disabled>Seleccionar</option>
                               <ng-container *ngFor="let item of zonas">
-                                  <ng-container  *ngIf="currency =='COP'">
-                                      <option value="{{item.country}}_{{item.zona}}" *ngIf="item.country =='Colombia'">{{item.country}}</option>
+                                  <ng-container  *ngIf="currency =='PEN'">
+                                      <option value="{{item.country}}_{{item.zona}}" *ngIf="item.country =='Perú'">{{item.country}}</option>
                                   </ng-container>
-                                  <ng-container  *ngIf="currency !='COP'">
-                                      <option value="{{item.country}}_{{item.zona}}" *ngIf="item.country !='Colombia'">{{item.country}}</option>
+                                  <ng-container  *ngIf="currency !='PEN'">
+                                      <option value="{{item.country}}_{{item.zona}}" *ngIf="item.country !='Perú'">{{item.country}}</option>
                                   </ng-container>
                               
                               </ng-container>
                           </select>
                       </div>
            
-                      <div class="form-group" *ngIf="direccion.pais == 'Colombia'">
+                      <div class="form-group" *ngIf="direccion.pais == 'Perú'">
                           
                           <select id="sl-region"  name="region" [(ngModel)]="direccion.region" class="form-control" disabled (change)="select_region()">
                               <option value="" selected disabled>Seleccionar</option>
@@ -326,8 +326,8 @@
                   </div>
                   <div class="ps-block__total">
                     <h3>Total
-                      <span *ngIf="currency != 'COP'">${{total_pagar}}</span>
-                      <span *ngIf="currency == 'COP'">S/{{total_pagar}}</span>
+                      <span *ngIf="currency != 'PEN'">${{total_pagar}}</span>
+                      <span *ngIf="currency == 'PEN'">S/{{total_pagar}}</span>
                     </h3>
                   </div>
                 </div>
