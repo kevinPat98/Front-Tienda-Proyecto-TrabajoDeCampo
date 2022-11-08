@@ -56,7 +56,7 @@
                               </td>
                               <td>
                                   <span *ngIf="item.currency == 'USD'">${{item.total_pagar}}</span>
-                                  <span *ngIf="item.currency == 'COP'">S/{{item.total_pagar}}</span>
+                                  <span *ngIf="item.currency == 'COP'">${{item.total_pagar}}</span>
                               </td>
                               <td>
                                 {{item.createdAt|date}}

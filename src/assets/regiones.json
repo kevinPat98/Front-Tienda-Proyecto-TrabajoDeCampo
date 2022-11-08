@@ -6,98 +6,130 @@
   },
   {
     "id": "02",
-    "name": "Áncash"
+    "name": "Antioquia"
   },
   {
     "id": "03",
-    "name": "Apurímac"
+    "name": "Arauca"
   },
   {
     "id": "04",
-    "name": "Arequipa"
+    "name": "Atlántico"
   },
   {
     "id": "05",
-    "name": "Ayacucho"
+    "name": "Bogotá"
   },
   {
     "id": "06",
-    "name": "Cajamarca"
+    "name": "Bolívar"
   },
   {
     "id": "07",
-    "name": "Callao"
+    "name": "Boyacá"
   },
   {
     "id": "08",
-    "name": "Cusco"
+    "name": "Caldas"
   },
   {
     "id": "09",
-    "name": "Huancavelica"
+    "name": "Caquetá"
   },
   {
     "id": "10",
-    "name": "Huánuco"
+    "name": "Casanare"
   },
   {
     "id": "11",
-    "name": "Ica"
+    "name": "Cauca"
   },
   {
     "id": "12",
-    "name": "Junín"
+    "name": "Cesar"
   },
   {
     "id": "13",
-    "name": "La Libertad"
+    "name": "Chocó"
   },
   {
     "id": "14",
-    "name": "Lambayeque"
+    "name": "Córdoba"
   },
   {
     "id": "15",
-    "name": "Lima"
+    "name": "Cundinamarca"
   },
   {
     "id": "16",
-    "name": "Loreto"
+    "name": "Guainía"
   },
   {
     "id": "17",
-    "name": "Madre de Dios"
+    "name": "Guaviare"
   },
   {
     "id": "18",
-    "name": "Moquegua"
+    "name": "Huila"
   },
   {
     "id": "19",
-    "name": "Pasco"
+    "name": "La Guajira"
   },
   {
     "id": "20",
-    "name": "Piura"
+    "name": "Magdalena"
   },
   {
     "id": "21",
-    "name": "Puno"
+    "name": "Meta"
   },
   {
     "id": "22",
-    "name": "San Martín"
+    "name": "Nariño"
   },
   {
     "id": "23",
-    "name": "Tacna"
+    "name": "Norte de Santander"
   },
   {
     "id": "24",
-    "name": "Tumbes"
+    "name": "Putumayo"
   },
   {
     "id": "25",
-    "name": "Ucayali"
+    "name": "Quindío"
+  },
+  {
+    "id": "26",
+    "name": "Risaralda"
+  },
+  {
+    "id": "27",
+    "name": "San Andrés y Providencia"
+  },
+  {
+    "id": "28",
+    "name": "Santander"
+  },
+  {
+    "id": "29",
+    "name": "Sucre"
+  },
+  {
+    "id": "30",
+    "name": "Tolima"
+  },
+  {
+    "id": "31",
+    "name": "Valle del Cauca"
+  },
+  {
+    "id": "32",
+    "name": "Vaupés"
+  },
+  {
+    "id": "33",
+    "name": "Vichada"
   }
 ]

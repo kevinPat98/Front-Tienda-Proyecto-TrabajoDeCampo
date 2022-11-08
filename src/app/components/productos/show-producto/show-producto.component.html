@@ -59,9 +59,9 @@
                   </ng-container>
                   <ng-container *ngIf="currency == 'COP'">
                     <span class="text-danger mr-1" *ngIf="producto.precio_antes_soles >= 1">
-                      <del style="color: #ff0000 !important;">S/{{producto.precio_antes_soles}}</del>
+                      <del style="color: #ff0000 !important;">${{producto.precio_antes_soles}}</del>
                     </span>
-                    <span><b>S/{{producto.precio}}</b></span>
+                    <span><b>${{producto.precio}}</b></span>
                   </ng-container>
                 </h4>
               </div>
@@ -232,9 +232,9 @@
                   </ng-container>
                   <ng-container *ngIf="currency == 'COP'">
                     <span class="text-danger mr-3" *ngIf="item.precio_antes_soles >= 1">
-                      <del>S/{{item.precio_antes_soles}}</del>
+                      <del>${{item.precio_antes_soles}}</del>
                     </span>
-                    <span><b>S/{{item.precio}}</b></span>
+                    <span><b>${{item.precio}}</b></span>
                   </ng-container>
               </p>
             </div>

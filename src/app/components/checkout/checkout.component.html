@@ -217,7 +217,7 @@
                                         ${{item.producto.precio_dolar*item.cantidad}}
                                     </ng-container>
                                     <ng-container *ngIf="currency == 'COP'">
-                                        S/{{item.producto.precio*item.cantidad}}
+                                        ${{item.producto.precio*item.cantidad}}
                                     </ng-container>
                                 </small>
 
@@ -228,7 +228,7 @@
                           <figcaption><strong>Subtotal</strong>
                             <small>
                                 <span *ngIf="currency != 'COP'">${{subtotal}}</span>
-                                <span *ngIf="currency == 'COP'">S/{{subtotal}}</span>
+                                <span *ngIf="currency == 'COP'">${{subtotal}}</span>
                             </small>
                         </figcaption>
                         </figure>
@@ -243,7 +243,7 @@
                                 <span *ngIf="envio_gratis" style="color: #127c5f;"><b>Envio gratis</b></span>
                                 <span>
                                     <span *ngIf="currency != 'COP'">${{envio}}</span>
-                                <span *ngIf="currency == 'COP'">S/{{envio}}</span>
+                                <span *ngIf="currency == 'COP'">${{envio}}</span>
                                 </span>
                             </figcaption>
                         </figure>
@@ -251,7 +251,7 @@
                             <figcaption style="margin-top: 2rem;">Descuento
                                 <span>
                                     <span *ngIf="currency != 'COP'">- ${{descuento}}</span>
-                                <span *ngIf="currency == 'COP'">- S/{{descuento}}</span>
+                                <span *ngIf="currency == 'COP'">- ${{descuento}}</span>
                                 </span>
                             </figcaption>
                         </figure>
@@ -259,7 +259,7 @@
                           <figcaption>Total
                               <span>
                                 <span *ngIf="currency != 'COP'">${{total_pagar}}</span>
-                                <span *ngIf="currency == 'COP'">S/{{total_pagar}}</span>
+                                <span *ngIf="currency == 'COP'">${{total_pagar}}</span>
                               </span>
                             </figcaption>
                         </figure>

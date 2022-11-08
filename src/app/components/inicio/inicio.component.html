@@ -87,9 +87,9 @@
                                       </ng-container>
                                       <ng-container *ngIf="currency == 'COP'">
                                         <span class="text-danger mr-3" *ngIf="producto_destacado_uno.producto.precio_antes_soles >= 1">
-                                          <del>S/{{producto_destacado_uno.producto.precio_antes_soles}}</del>
+                                          <del>${{producto_destacado_uno.producto.precio_antes_soles}}</del>
                                         </span>
-                                        <span><b>S/{{producto_destacado_uno.producto.precio}}</b></span>
+                                        <span><b>${{producto_destacado_uno.producto.precio}}</b></span>
                                       </ng-container>
                                     </p>
                                     <a class="ps-link--under" [routerLink]="['/productos/'+producto_destacado_uno.producto.slug]" >{{ 'inicio.item_siete' | translate }}</a>
@@ -114,9 +114,9 @@
                                       <ng-container *ngIf="currency == 'COP'">
                                         <ng-container  *ngIf="producto_destacado_dos.producto">
                                           <span class="text-danger mr-3" *ngIf="producto_destacado_dos.producto.precio_antes_soles >= 1">
-                                              <del>S/{{producto_destacado_dos.producto.precio_antes_soles}}</del>
+                                              <del>${{producto_destacado_dos.producto.precio_antes_soles}}</del>
                                             </span>
-                                            <span><b>S/{{producto_destacado_dos.producto.precio}}</b></span>
+                                            <span><b>${{producto_destacado_dos.producto.precio}}</b></span>
                                         </ng-container>
                                       </ng-container>
                                     </p>
@@ -145,9 +145,9 @@
                                       </ng-container>
                                       <ng-container *ngIf="currency == 'COP'">
                                         <span class="text-danger mr-3" *ngIf="producto_destacado_tres.producto.precio_antes_soles >= 1">
-                                          <del>S/{{producto_destacado_tres.producto.precio_antes_soles}}</del>
+                                          <del>${{producto_destacado_tres.producto.precio_antes_soles}}</del>
                                         </span>
-                                        <span><b>S/{{producto_destacado_tres.producto.precio}}</b></span>
+                                        <span><b>${{producto_destacado_tres.producto.precio}}</b></span>
                                       </ng-container>
                                     </p>
                                     <a class="ps-link--under"  [routerLink]="['/productos/'+producto_destacado_tres.producto.slug]">{{ 'inicio.item_siete' | translate }}</a>
@@ -171,9 +171,9 @@
                                       </ng-container>
                                       <ng-container *ngIf="currency == 'COP'">
                                         <span class="text-danger mr-3" *ngIf="producto_destacado_cuatro.producto.precio_antes_soles >= 1">
-                                          <del>S/{{producto_destacado_cuatro.producto.precio_antes_soles}}</del>
+                                          <del>${{producto_destacado_cuatro.producto.precio_antes_soles}}</del>
                                         </span>
-                                        <span><b>S/{{producto_destacado_cuatro.producto.precio}}</b></span>
+                                        <span><b>${{producto_destacado_cuatro.producto.precio}}</b></span>
                                       </ng-container>
                                     </p>
                                     <a class="ps-link--under"  [routerLink]="['/productos/'+producto_destacado_cuatro.producto.slug]">{{ 'inicio.item_siete' | translate }}</a>
@@ -226,9 +226,9 @@
                                       </ng-container>
                                       <ng-container *ngIf="currency == 'COP'">
                                         <span class="text-danger mr-3" *ngIf="item.precio_antes_soles >= 1">
-                                          <del>S/{{item.precio_antes_soles}}</del>
+                                          <del>${{item.precio_antes_soles}}</del>
                                         </span>
-                                        <span><b>S/{{item.precio}}</b></span>
+                                        <span><b>${{item.precio}}</b></span>
                                       </ng-container>
                                     </p>
                             </div>

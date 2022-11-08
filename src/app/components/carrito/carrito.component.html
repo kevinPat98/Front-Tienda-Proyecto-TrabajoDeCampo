@@ -51,7 +51,7 @@
                                         ${{item.producto.precio_dolar}}
                                     </ng-container>
                                     <ng-container *ngIf="currency == 'COP'">
-                                        S/{{item.producto.precio}}
+                                        ${{item.producto.precio}}
                                     </ng-container>
                                 </strong>
                             </td>
@@ -70,7 +70,7 @@
                                         ${{item.producto.precio_dolar*item.cantidad}}
                                     </ng-container>
                                     <ng-container *ngIf="currency == 'COP'">
-                                        S/{{item.producto.precio*item.cantidad}}
+                                        ${{item.producto.precio*item.cantidad}}
                                     </ng-container>
                                 </strong>
                               </p>
@@ -105,13 +105,13 @@
                 <div class="ps-block__top">
                   <h4 style="margin-bottom: 20px !important;">Subtotal 
                           <span *ngIf="currency != 'COP'">${{subtotal}}</span>
-                          <span *ngIf="currency == 'COP'">S/{{subtotal}}</span>
+                          <span *ngIf="currency == 'COP'">${{subtotal}}</span>
                   </h4>
   
                   <div class="ps-block__shipping">
                     <h4>Envio
                           <span *ngIf="currency != 'COP'">${{precio_envio_dolares}}</span>
-                          <span *ngIf="currency == 'COP'">S/{{precio_envio_soles}}</span>
+                          <span *ngIf="currency == 'COP'">${{precio_envio_soles}}</span>
                     </h4>
                     <p>
                       <a class="ps-product__title" [routerLink]="['/politicas-envio']" >
@@ -150,7 +150,7 @@
                   <div class="ps-block__total">
                     <h3>Total
                       <span *ngIf="currency != 'COP'">${{total_pagar}}</span>
-                      <span *ngIf="currency == 'COP'">S/{{total_pagar}}</span>
+                      <span *ngIf="currency == 'COP'">${{total_pagar}}</span>
                     </h3>
                   </div>
                 </div>
@@ -228,7 +228,7 @@
                                       ${{item.producto.precio_dolar}}
                                   </ng-container>
                                   <ng-container *ngIf="currency == 'COP'">
-                                      S/{{item.producto.precio}}
+                                      ${{item.producto.precio}}
                                   </ng-container>
                               </strong>
                           </td>
@@ -247,7 +247,7 @@
                                       ${{item.producto.precio_dolar*item.cantidad}}
                                   </ng-container>
                                   <ng-container *ngIf="currency == 'COP'">
-                                      S/{{item.producto.precio*item.cantidad}}
+                                      ${{item.producto.precio*item.cantidad}}
                                   </ng-container>
                               </strong>
                             </p>
@@ -282,13 +282,13 @@
                 <div class="ps-block__top">
                   <h4 style="margin-bottom: 20px !important;">Subtotal 
                           <span *ngIf="currency != 'COP'">${{subtotal}}</span>
-                          <span *ngIf="currency == 'COP'">S/{{subtotal}}</span>
+                          <span *ngIf="currency == 'COP'">${{subtotal}}</span>
                   </h4>
   
                   <div class="ps-block__shipping">
                     <h4>Envio
                           <span *ngIf="currency != 'COP'">${{precio_envio_dolares}}</span>
-                          <span *ngIf="currency == 'COP'">S/{{precio_envio_soles}}</span>
+                          <span *ngIf="currency == 'COP'">${{precio_envio_soles}}</span>
                     </h4>
                     <p>
                       <a class="ps-product__title" [routerLink]="['/politicas-envio']" >
@@ -327,7 +327,7 @@
                   <div class="ps-block__total">
                     <h3>Total
                       <span *ngIf="currency != 'COP'">${{total_pagar}}</span>
-                      <span *ngIf="currency == 'COP'">S/{{total_pagar}}</span>
+                      <span *ngIf="currency == 'COP'">${{total_pagar}}</span>
                     </h3>
                   </div>
                 </div>

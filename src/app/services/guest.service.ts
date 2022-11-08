@@ -165,7 +165,7 @@ export class GuestService {
   createToken(data:any):Observable<any>{
     let headers = new HttpHeaders()
     .set('Content-Type','application/json')
-    .set('Authorization','Bearer TEST-1565437970717712-100416-3da5767dad6b8dfef6c0563925dadf81-612621626');
+    .set('Authorization','Bearer TEST-8220970637112586-110720-8e92f964879df8c294c51a498a15690c-156357517');
     return this._http.post('https://api.mercadopago.com/checkout/preferences',data,{headers:headers});
   }
 
@@ -177,7 +177,7 @@ export class GuestService {
   obtenerPago(id:any):Observable<any>{
     let headers = new HttpHeaders()
     .set('Content-Type','application/json')
-    .set('Authorization','Bearer TEST-1565437970717712-100416-3da5767dad6b8dfef6c0563925dadf81-612621626');
+    .set('Authorization','Bearer TEST-8220970637112586-110720-8e92f964879df8c294c51a498a15690c-156357517');
     return this._http.get('https://api.mercadopago.com/v1/payments/'+id,{headers:headers});
   }
 
