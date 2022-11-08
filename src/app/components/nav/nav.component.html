@@ -2,8 +2,8 @@
 right: 0;
 left: 0;
 z-index: 1030;
-background: #f1ee51;
-color:#191919" *ngIf="config.envio_activacion != 'Desactivado'">
+background: #F05757;
+color: white" *ngIf="config.envio_activacion != 'Desactivado'">
     <div class="col-12 text-center">
         ENVIO GRATIS POR COMPRAS MAYORES A
         <span *ngIf="currency == 'COP'">${{config.monto_min_soles}}</span>
@@ -15,7 +15,7 @@ color:#191919" *ngIf="config.envio_activacion != 'Desactivado'">
     <div class="header__left">
         <a class="ps-logo" [routerLink]="['/']" routerLinkActive="router-link-active">
         
-            <img src="https://i.postimg.cc/1zY1kcfX/logo-white.png" alt="" style="width:150px;">
+            <img src="assets/images/home/LOGO.png" alt="" style="width:120px;">
         </a>
     </div>
     <div class="header__right">
@@ -67,12 +67,12 @@ color:#191919" *ngIf="config.envio_activacion != 'Desactivado'">
   
                   <ng-container *ngIf="user_lc != undefined">
                       <a class="header__cart ps-toggle--sidebar" (click)="openCart()">
-                          <i class="icon-cart text-white"></i><span  style="background: #f1ee51;color:black">{{carrito_arr.length}}</span>
+                          <i class="icon-cart text-white"></i><span  style="background: white;color:black">{{carrito_arr.length}}</span>
                       </a>
                   </ng-container>
                   <ng-container *ngIf="user_lc == undefined">
                       <a class="header__cart ps-toggle--sidebar" (click)="openCart()">
-                          <i class="icon-cart text-white"></i><span  style="background: #f1ee51;color:black">{{carrito_logout.length}}</span>
+                          <i class="icon-cart text-white"></i><span  style="background: white;color:black">{{carrito_logout.length}}</span>
                       </a>
                   </ng-container>
   
@@ -176,7 +176,7 @@ color:#191919" *ngIf="config.envio_activacion != 'Desactivado'">
                         <br> 
                         <ng-container>
                             <div>
-                                <h5 class="text-center"><b style="color: #127c5f;">Antes de realizar tu compra</b></h5>
+                                <h5 class="text-center"><b style="color: #F05757;">Antes de realizar tu compra</b></h5>
                             </div>
                             <br>
                             <p>
@@ -274,7 +274,6 @@ color:#191919" *ngIf="config.envio_activacion != 'Desactivado'">
                       <li><a [routerLink]="['/']" >{{ 'menu.item_uno' | translate }}</a></li>
                       <li><a [routerLink]="['/productos']" >{{ 'menu.item_dos' | translate }}</a></li>
                       <li><a [routerLink]="['/nosotros']">{{ 'menu.item_seis' | translate }}</a></li>
-                      <li><a [routerLink]="['/ofertas']" >{{ 'menu.item_trece' | translate }}</a></li>
                       <li><a [routerLink]="['/contacto']" >{{ 'menu.item_cuatro' | translate }}</a></li>
   
                       <li *ngIf="user_lc"><a (click)="logout()" >{{ 'menu.item_diez' | translate }}</a></li>
@@ -304,7 +303,7 @@ color:#191919" *ngIf="config.envio_activacion != 'Desactivado'">
               </div>
               <figure class="ps-navigation__bottom">
                   <figcaption>{{ 'menu.item_once' | translate }}</figcaption>
-                  <p>Ciudad, País contacto@domain.com <br> (+51) 987456321</p>
+                  <p>Mongui, Colombia balonesda@gmail.com <br> (+57) 3103502069</p>
               </figure>
           </nav>
       </div>
